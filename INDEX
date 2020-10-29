@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head class="cabecera">
+         <meta charset="UTF-8">
+         <title>Auditoria Informatica</title>
+         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <h1>TRABAJO PRACTICO N°2</h1>
+        <p>SELECCIONE EL EJERCICIO QUE VA A EJECUTAR 1-2-3-4 </p>
+        <nav>
+            <ul >
+              <li >
+                <a  href="punto_uno.html"> Ejercicio 1</a>
+              </li>
+              <li>
+                <a  href="punto_dos.html">Ejercicio 2</a>
+              </li>
+              <li>
+                <a  href="punto_tres.html">Ejercicio 3</a>
+              </li>
+              <li>
+                <a  href="punto_cuatro.html">Ejercicio 4</a>
+              </li>
+            </ul>
+          </nav>
+    </body>
+</html>

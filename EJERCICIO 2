@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function chequear_numero(form) {
+            var numero = form.elements[0].value.substr(0, (form.elements[0].value.length - 2));
+            let numero_de_control = form.elements[0].value.substr(-1);
+            three = true;
+            result = 0
+            for (var i = 0; i < numero.length; i++) {
+                result += parseInt(numero[i]) * (three ? 3 : 1);
+                three = !three;
+            }
+            result = result % 10;
+            if (result == numero_de_control) {
+                alert("Numero valido");
+            } else {
+                alert("Numero no valido");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Auditoria Informatica</h1>
+    <p>EJERCICIO 2</p>
+    
+    <form id="formulario">
+        <p>Numero a comprobar</p>
+        <input type="text" name="codigo_cliente" max="99999" min="00" placeholder="1231243451-0" class="form-control">
+        <input type="button" onclick="chequear_numero(this.form)" class="btn btn-outline-dark mt-3" value="Enviar">
+    </form>
+
+    <nav >
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="punto_uno.html">Punto N°1</a>
+            </li>
+            <li>
+                <a href="punto_tres.html">Punto N°3</a>
+            </li>
+            <li>
+                <a href="punto_cuatro.html">Punto N°4</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
